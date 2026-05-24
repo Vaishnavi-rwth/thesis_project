@@ -1,0 +1,44 @@
+{
+  "base_circuit": "C:\\Users\\vchat\\Downloads\\LTspice\\my_neuron_tonic-Abs_&_Rel_Ref_Period_ReRs.asc",
+  "ltspice_exe": "C:/Users/vchat/LTspice/LTspice.exe",
+  "output_dir": "automation/results",
+  "parallel_sims": 1,
+  "timeout_s": 300,
+  "verbose": false,
+  "sampling": {
+    "num_samples": 100,
+    "seed": 2026
+  },
+  "parameters": {
+    "RL1": {
+      "min": 4000,
+      "max": 8000,
+      "scale": "linear"
+    },
+    "RL2": {
+      "min": 4000,
+      "max": 9000,
+      "scale": "linear"
+    },
+    "C1": {
+      "min": 1e-9,
+      "max": 50e-9,
+      "scale": "log"
+    },
+    "C2": {
+      "min": 0.5e-9,
+      "max": 10e-9,
+      "scale": "log"
+    },
+    "ENa": {
+      "min": -1.6,
+      "max": -1.1,
+      "scale": "linear"
+    },
+    "EK": {
+      "min": 1.1,
+      "max": 1.6,
+      "scale": "linear"
+    }
+  }
+}

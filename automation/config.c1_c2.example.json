@@ -1,0 +1,29 @@
+{
+  "base_circuit": "C:/Users/vchat/Downloads/LTspice/my_neuron_tonic-Abs_&_Rel_Ref_Period_ReRs.asc",
+  "ltspice_exe": "C:/Users/vchat/LTspice/LTspice.exe",
+  "output_dir": "automation/results_c1_c2_abs_rel_ref",
+  "parallel_sims": 1,
+  "timeout_s": 300,
+  "verbose": false,
+  "trace_name": "V(n003)",
+  "c1_component": "C1",
+  "c2_component": "C2",
+  "c1_values_f": [
+    1e-9,
+    2e-9,
+    4e-9,
+    8e-9,
+    12e-9,
+    16e-9,
+    20e-9
+  ],
+  "c2_values_f": [
+    1e-9,
+    2e-9,
+    4e-9,
+    8e-9,
+    12e-9,
+    16e-9,
+    20e-9
+  ]
+}

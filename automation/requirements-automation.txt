@@ -1,0 +1,4 @@
+PyLTSpice==5.5.1
+ltspice
+numpy
+pandas

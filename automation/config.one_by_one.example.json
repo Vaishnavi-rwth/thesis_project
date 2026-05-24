@@ -1,0 +1,88 @@
+{
+  "base_circuit": "C:/Users/vchat/Downloads/LTspice/my_neuron_tonic-Abs_&_Rel_Ref_Period_ReRs.asc",
+  "ltspice_exe": "C:/Users/vchat/LTspice/LTspice.exe",
+  "output_dir": "automation/results_one_by_one",
+  "parallel_sims": 1,
+  "timeout_s": 600,
+  "verbose": false,
+  "trace_name": "V(n003)",
+  "fixed_components": {
+    "I1": "PULSE(0 50u 40u 0.01u 0.01u 20u 90u 2)",
+    "I2": "PULSE(0 0.95u 110u 0.01u 0.01u 20u 90u 2)"
+  },
+  "sweeps": [
+    {
+      "name": "RL1",
+      "component": "R1",
+      "min": 2000,
+      "max": 12000,
+      "step": 250,
+      "scale": "linear"
+    },
+    {
+      "name": "RL2",
+      "component": "R2",
+      "min": 3000,
+      "max": 15000,
+      "step": 250,
+      "scale": "linear"
+    },
+    {
+      "name": "C1",
+      "component": "C1",
+      "min": 1e-9,
+      "max": 200e-9,
+      "steps": 25,
+      "scale": "log"
+    },
+    {
+      "name": "C2",
+      "component": "C2",
+      "min": 0.5e-9,
+      "max": 20e-9,
+      "steps": 25,
+      "scale": "log"
+    },
+    {
+      "name": "ENa_EK_Coupled",
+      "component": "V2",
+      "coupled_negative_of": "V1",
+      "min": 0.5,
+      "max": 2.5,
+      "step": 0.1,
+      "scale": "linear"
+    },
+    {
+      "name": "Re1",
+      "component": "Re1",
+      "min": 150,
+      "max": 500,
+      "step": 10,
+      "scale": "linear"
+    },
+    {
+      "name": "Re2",
+      "component": "Re2",
+      "min": 150,
+      "max": 500,
+      "step": 10,
+      "scale": "linear"
+    },
+    {
+      "name": "Rshunt1",
+      "component": "Rshunt1",
+      "min": 13000,
+      "max": 17000,
+      "step": 100,
+      "scale": "linear"
+    },
+    {
+      "name": "Rshunt2",
+      "component": "Rshunt2",
+      "min": 13000,
+      "max": 17000,
+      "step": 100,
+      "scale": "linear"
+    }
+  ]
+}
