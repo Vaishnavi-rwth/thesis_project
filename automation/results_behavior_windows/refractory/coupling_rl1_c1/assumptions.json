@@ -1,0 +1,34 @@
+{
+  "behavior_key": "refractory",
+  "profile_title": "Refractory Period",
+  "sweep_mode": "coupling",
+  "fixed_components_assumed": {
+    "R1": 8000.0,
+    "R2": 9000.0,
+    "C1": 2.1e-08,
+    "C2": 6e-09,
+    "V2": 1.6,
+    "V1": -1.6,
+    "V3": "PULSE(0 0.45 10u 1e-9 1e-9 10e-6 200e-6 1)",
+    "V4": "PULSE(0 0.45 35u 1e-9 1e-9 10e-6 200e-6 1)"
+  },
+  "sweep_info": {
+    "pair": "RL1_C1",
+    "x_param": {
+      "name": "RL1",
+      "component": "R1",
+      "min": 7000.0,
+      "max": 9500.0,
+      "step": 50.0,
+      "scale": "linear"
+    },
+    "y_param": {
+      "name": "C1",
+      "component": "C1",
+      "min": 2e-08,
+      "max": 2.3e-08,
+      "steps": 19,
+      "scale": "log"
+    }
+  }
+}

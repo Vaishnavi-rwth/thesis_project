@@ -1,0 +1,2 @@
+sweep_name,component,swept_value,coupled_negative_component,coupled_negative_value,run_id,status,error
+Rshunt2,Rshunt2,13000.0,,,0,component_not_found,line starting with 'Rshunt2' not found in netlist

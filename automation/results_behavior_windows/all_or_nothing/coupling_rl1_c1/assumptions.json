@@ -1,0 +1,36 @@
+{
+  "behavior_key": "all_or_nothing",
+  "profile_title": "All-or-Nothing",
+  "sweep_mode": "coupling",
+  "fixed_components_assumed": {
+    "R1": 6000.0,
+    "R2": 6000.0,
+    "C1": 2e-09,
+    "C2": 2e-09,
+    "V2": 1.35,
+    "V1": -1.35,
+    "V3": "PULSE(0 0.10 110u 1n 1n 10u 120u 1)",
+    "V4": "PULSE(0 0.15 220u 1n 1n 10u 120u 1)",
+    "V5": "PULSE(0 0.45 330u 1n 1n 10u 120u 1)",
+    "V6": "PULSE(0 0.55 440u 1n 1n 10u 120u 1)"
+  },
+  "sweep_info": {
+    "pair": "RL1_C1",
+    "x_param": {
+      "name": "RL1",
+      "component": "R1",
+      "min": 3000,
+      "max": 9000,
+      "step": 250,
+      "scale": "linear"
+    },
+    "y_param": {
+      "name": "C1",
+      "component": "C1",
+      "min": 8e-10,
+      "max": 1.2e-08,
+      "steps": 17,
+      "scale": "log"
+    }
+  }
+}

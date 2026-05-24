@@ -1,8 +1,13 @@
 __pycache__
-results/
+results/**/raw_runs/
+*.pyc
 *.log
 *.net
 *.raw
 *.op.raw
-*.pyc
+*.out
+*.aux
+*.toc
+*.fls
+*.fdb_latexmk
 

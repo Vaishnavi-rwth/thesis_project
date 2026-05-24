@@ -1,0 +1,33 @@
+{
+  "behavior_key": "tonic_bursting",
+  "profile_title": "Tonic Bursting",
+  "sweep_mode": "coupling",
+  "fixed_components_assumed": {
+    "R1": 6000.0,
+    "R2": 6000.0,
+    "C1": 3e-08,
+    "C2": 3e-09,
+    "V2": 1.4,
+    "V1": -1.4,
+    "I1": "PWL(0 0 0.0001m -90u 1m -90u 1.0001m 0)"
+  },
+  "sweep_info": {
+    "pair": "RL1_C1",
+    "x_param": {
+      "name": "RL1",
+      "component": "R1",
+      "min": 4500,
+      "max": 12000,
+      "step": 250,
+      "scale": "linear"
+    },
+    "y_param": {
+      "name": "C1",
+      "component": "C1",
+      "min": 5e-09,
+      "max": 1.2e-07,
+      "steps": 21,
+      "scale": "log"
+    }
+  }
+}
